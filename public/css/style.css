@@ -365,4 +365,9 @@ p {
   padding: 1.125rem 1rem;
 }
 
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+}
 /* START */
