@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="public/assets/imgs/favicon.png" type="image/x-icon">
+  <title>Ola-Olu Medicals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;700;800&family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body class="text-black-90 bg-white-90">
+  
+  <header class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-lg-between py-5">
+      <a class="navbar-brand brand d-flex gap-2 gap-xxl-3 m-0" href="#">
+        <div class="flex-centre"><img class="brand-logo" src="public/assets/imgs/logo.png" alt="OLA-OLU logo"></div>
+        <div class="brand-name m-0 d-flex flex-centre text-black-90 fw-bold text-uppercase">OLA-OLU</div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-container" aria-controls="nav-container" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_587_7199)">
+          <path d="M3 4.42847H21V6.42847H3V4.42847ZM9 11.4285H21V13.4285H9V11.4285ZM3 18.4285H21V20.4285H3V18.4285Z" fill="#020D01"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_587_7199">
+          <rect width="24" height="24" fill="white" transform="translate(0 0.428467)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse flex-grow-0 text-nowrap text-black-90" id="nav-container">
+        <ul class="nabar-nav m-0 py-7 py-lg-0 d-flex flex-column flex-lg-row align-items-lg-center row-gap-8 row-gap-lg-0 column-gap-lg-4 column-gap-xl-6 list-unstyled">
+          <li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+          <li class="nav-item"><a href="#career" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="#carol" class="nav-link">Carol on the rock</a></li>
+          <button class="btn btn-small width-max-content d-block d-lg-none text-light-grey" type="button">Book Appointment</button>
+        </ul>
+      </div>
+
+      <button class="btn btn-large d-none d-lg-block text-light-grey" type="button">Book Appointment</button>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-main d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row mt-md-10 mt-lg-25 mt-xl-30 mb-xl-20">
+          <div class="hero-left-col col-lg-6 d-flex align-items-center">
+             <div class=""> <!--* had `.my-auto` here -->
+              <h1 class="hero-text position-relative fw-bold">
+                <span>Modern</span> Healthcare at Your <span>Fingertips</span>
+                <svg class="hero-stroke position-absolute d-none d-lg-block" width="282" height="17" viewBox="0 0 282 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.71577 15.3013C50.364 7.77967 174.171 -4.37132 280.213 7.19739" stroke="#0360D9" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </h1>
+              <p class="mt-4 mt-lg-6">
+                Our state-of-the-art facility is equipped with the latest medical technology and staffed by a team of highly skilled professionals who are dedicated to providing personalized care to our patients.
+              </p>
+              <button class="btn btn-large d-flex my-8 mt-lg-10 mb-lg-15 mb-xl-20 mb-xxl-30 text-light-grey" type="button">Book Appointment</button>
+            </div>
+          </div>
+
+          <div class="hero-right-col col-lg-6">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="container">
+        <div class="d-flex gap-14 gap-lg-20 gap-xl-23 py-3 py-lg-4 fw-bold ">
+          <div class="stats">
+            <div class="text-uppercase">20+</div>
+            <div>Years of experience</div>
+          </div>
+          <div class="stats">
+            <div class="text-uppercase">100+</div>
+            <div>Doctors</div>
+          </div>
+          <div class="stats">
+            <div class="text-uppercase">100+</div>
+            <div>Happy Patients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="service py-12 py-lg-19">
+    <div class="container">
+
+      <h2 class="service-header text-center fw-bold">Our Services</h2>
+
+      <div class="service-cards row row-gap-4 row-gap-lg-6 row-gap-xl-8 column-gap-xl-15 column-gap-xxl-30 mt-6 mt-md-9 mt-xl-12">
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#0AD3FF"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Antenatal</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">Our comprehensive antenatal care services provide expectant mothers with the support and medical attention they need throughout their pregnancy.</p>
+          </div>
+        </div>
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-4 p-md-5 p-xl-7">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#EF476F"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Postnatal</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              After giving birth, our postnatal care services focus on the well-being of both the mother and the newborn.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#FFD166"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Impatient Care</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              Our inpatient care services are designed to provide a comfortable and healing environment for patients who need overnight stays or extended medical treatment.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#43C59E"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Family planning</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              Our dedicated family planning services offer a range of contraceptive options, counseling, and guidance to help you choose the most suitable method for your lifestyle and future plans.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#FFD166"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Xray</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              Our state-of-the-art X-ray facility is equipped with advanced imaging technology to assist in diagnosing and evaluating various medical conditions.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#43C59E"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Ultra Scanning</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              Our ultrasound scanning services utilize advanced equipment to provide detailed and real-time imaging of internal organs and structures.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#EF476F"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Labour & Delivery</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              Our experienced team of healthcare professionals is dedicated to ensuring a safe and comfortable childbirth experience for both mother and baby.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card-holder col-6 col-md-4 col-lg-3">
+          <div class="service-card p-3 px-lg-4 py-xl-6 px-xl-4">
+            <svg class="flex-centre" width="40" height="32">
+              <use class="heart" xlink:href="#heart" fill="#0AD3FF"></use>
+            </svg>
+            <h4 class="mt-4 mt-md-6 mt-xl-8">Surgical Operation</h4>
+            <p class="mt-2 mt-md-3 mt-xl-4">
+              In cases where surgical intervention is necessary, our skilled surgeons perform a wide range of procedures to address various medical conditions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="why-choose-us" class="why-us py-5 py-lg-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-md-flex align-items-md-center d-lg-block">
+        <h2 class="why-us-header d-md-none">Why You Should  Choose Us?</h2>
+
+        <div class="why-us-img-holder flex-centre mt-10 mt-md-0">
+          <img class="why-us-img img-fluid" src="public/assets/imgs/why-choose-us-img.png" alt="Why choose us image">
+        </div>
+      </div>
+
+      <div class="col-md-8 ps-md-5 ps-lg-10 ps-xl-20 ps-xxl-30">
+        <h2 class="why-us-header d-none d-md-block">Why You Should Choose Us?</h2>
+
+        <div class="reasons d-flex flex-column gap-4 gap-md-5 mt-6 mt-md-8">
+          
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Advanced Medical Technology</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Expert Medical Professionals</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Patient-Centered Approach</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Online Appointment Booking</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Specialized Departments</div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="dedicatied-doctors" class="doctor py-5 py-lg-8 lh-base">
+    <div class="container d-flex flex-column gap-6 gap-lg-9">
+      <h2 class="doctors-header-text text-center">Our Dedicated Doctors</h2>
+      <p class="text-center">Our dedicated team of doctors brings years of experience and expertise in their respective fields. Trust in their knowledge and skills to provide you with the best possible care.</p>
+      <div class="doctors-cards row">
+
+        <div class="each-card-holder d-flex justify-content-center col-12 col-md-4">
+          <div class="doctor-card d-flex flex-column gap-6 width-max-content p-6">
+            <div class="doctor-image-holder position-relative">
+              <img class="doctor-image img-fluid" src="public/assets/imgs/dr-ololade.png" alt="Dr. Samuel Ololade">
+            </div>
+
+            <div class="d-flex flex-column gap-2 gap-lg-4">
+              <div class="doctor-name fw-semibold">Dr. Samuel Ololade O.</div>
+              <div class="doctor-specialisation fs-6">
+                <span class="d-block">General Surgeon</span>
+                <span class="d-block">Surgical Excellence for Optimal Health</span>
+              </div>
+            </div>
+
+            <div class="btn btn-small width-max-content  fw-semibold">View Profile</div>
+          </div>
+        </div>
+
+        <div class="each-card-holder d-flex justify-content-center col-12 col-md-4">
+          <div class="doctor-card d-flex flex-column gap-6 width-max-content p-6">
+            <div class="doctor-image-holder position-relative cardio">
+              <img class="doctor-image img-fluid" src="public/assets/imgs/dr-olalade-2.png" alt="Dr. Samuel - Cardiologist">
+            </div>
+
+            <div class="d-flex flex-column gap-2 gap-lg-4">
+              <div class="doctor-name fw-semibold">Dr. Samuel Ololade O.</div>
+              <div class="doctor-specialisation fs-6">
+                <span class="d-block">Cardiologist</span>
+                <span class="d-block">Expert Heart Care for a Healthy Life</span>
+              </div>
+            </div>
+
+            <div class="btn btn-small width-max-content  fw-semibold">View Profile</div>
+          </div>
+        </div>
+
+        <div class="each-card-holder d-flex justify-content-center col-12 col-md-4">
+          <div class="doctor-card d-flex flex-column gap-6 width-max-content p-6">
+            <div class="doctor-image-holder position-relative">
+              <img class="doctor-image img-fluid" src="public/assets/imgs/dr-sunday.png" alt="Dr. Joseph Sunday A.O.">
+            </div>
+
+            <div class="d-flex flex-column gap-2 gap-lg-4">
+              <div class="doctor-name fw-semibold">Dr. Joseph Sunday A.O.</div>
+              <div class="doctor-specialisation fs-6">
+                <span class="d-block">General Surgeon</span>
+                <span class="d-block">Surgical Excellence for Optimal Health</span>
+              </div>
+            </div>
+
+            <div class="btn btn-small width-max-content  fw-semibold">View Profile</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <svg class="d-none" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="heart" width="40" height="32" viewBox="0 0 40 32">
+      <path d="M21.2879 1.15656C21.2879 0.849818 21.1522 0.555643 20.9107 0.338747C20.6692 0.121851 20.3416 0 20 0C19.6584 0 19.3308 0.121851 19.0893 0.338747C18.8478 0.555643 18.7121 0.849818 18.7121 1.15656V13.2842L17.4242 14.11V8.60477C17.4242 6.40732 15.4408 4.62622 12.9938 4.62622C11.6441 4.62622 10.3587 5.25076 9.2769 5.99558C8.16672 6.76353 7.09518 7.78362 6.14471 8.83839C4.24891 10.9387 2.67509 13.3397 2.07493 14.5749C1.62159 15.5117 1.06263 17.2581 0.642778 19.2266C0.217769 21.2089 -0.0861767 23.522 0.0220073 25.6084C0.12504 27.6139 0.622171 29.7489 2.18054 30.998C3.90633 32.3859 6.3585 32.2841 9.24083 30.9887L13.8644 28.9139C14.934 28.4336 15.8336 27.6954 16.4624 26.7819C17.0911 25.8684 17.4241 24.8157 17.4242 23.7418V21.9745C17.4242 21.6678 17.2885 21.3736 17.047 21.1567C16.8054 20.9398 16.4779 20.818 16.1363 20.818C15.7947 20.818 15.4671 20.9398 15.2256 21.1567C14.9841 21.3736 14.8484 21.6678 14.8484 21.9745V23.7418C14.8484 24.3865 14.6483 25.0184 14.2707 25.5667C13.893 26.115 13.3528 26.558 12.7105 26.846L8.08945 28.9208C5.5703 30.0519 4.44467 29.7142 3.89603 29.2724C3.1748 28.6941 2.69312 27.4196 2.59524 25.502C2.49994 23.6631 2.7704 21.5466 3.17222 19.6614C3.57663 17.7647 4.09179 16.2126 4.43695 15.4978C4.92635 14.4847 6.36881 12.2595 8.14611 10.2933C9.02704 9.31721 9.95691 8.44517 10.8481 7.82988C11.7703 7.19146 12.4941 6.93933 12.9938 6.93933C13.4857 6.93933 13.9574 7.1148 14.3052 7.42713C14.653 7.73946 14.8484 8.16307 14.8484 8.60477V15.7615L10.2377 18.7223C9.97911 18.9066 9.80924 19.1731 9.76315 19.4667C9.71705 19.7602 9.79826 20.0585 9.98999 20.2998C10.1817 20.5412 10.4693 20.7072 10.7934 20.7636C11.1176 20.82 11.4534 20.7624 11.7316 20.6029L20 15.2989L28.2683 20.6029C28.4056 20.6968 28.5625 20.7649 28.7297 20.8033C28.8969 20.8416 29.071 20.8494 29.2416 20.8262C29.4122 20.803 29.5759 20.7492 29.7229 20.668C29.87 20.5869 29.9973 20.48 30.0975 20.3538C30.1976 20.2276 30.2685 20.0846 30.3059 19.9334C30.3433 19.7821 30.3464 19.6256 30.3152 19.4732C30.2839 19.3208 30.2189 19.1756 30.1239 19.0462C30.0289 18.9168 29.906 18.8059 29.7623 18.72L25.1516 15.7615V8.60477C25.1516 8.16307 25.347 7.73946 25.6948 7.42713C26.0426 7.1148 26.5143 6.93933 27.0062 6.93933C27.5059 6.93933 28.2297 7.19377 29.1519 7.82988C30.0431 8.44517 30.9704 9.31721 31.8565 10.2957C33.6286 12.2618 35.0711 14.4847 35.563 15.4978C35.9082 16.2126 36.4234 17.7647 36.8278 19.6614C37.2296 21.5443 37.4975 23.6631 37.4048 25.502C37.3069 27.4196 36.8278 28.6941 36.104 29.2724C35.5553 29.7119 34.4297 30.0519 31.9105 28.9208L27.287 26.846C26.6451 26.5577 26.1054 26.1146 25.7282 25.5663C25.3511 25.018 25.1514 24.3862 25.1516 23.7418V21.9745C25.1516 21.6678 25.0159 21.3736 24.7744 21.1567C24.5329 20.9398 24.2053 20.818 23.8637 20.818C23.5221 20.818 23.1946 20.9398 22.953 21.1567C22.7115 21.3736 22.5758 21.6678 22.5758 21.9745V23.7418C22.5758 24.8157 22.9089 25.8684 23.5376 26.7819C24.1664 27.6954 25.0659 28.4336 26.1356 28.9139L30.7592 30.9887C33.6441 32.2841 36.0911 32.3835 37.8195 30.998C39.3778 29.7489 39.875 27.6139 39.978 25.6084C40.0862 23.522 39.7822 21.2089 39.3598 19.2266C38.9374 17.2558 38.381 15.5117 37.9225 14.5726C37.3249 13.3397 35.7511 10.9387 33.8553 8.83839C32.9022 7.78362 31.8333 6.76353 30.7231 5.99558C29.6413 5.25076 28.3559 4.62622 27.0062 4.62622C24.5592 4.62622 22.5758 6.40732 22.5758 8.60477V14.11L21.2879 13.2842V1.15656Z" fill=""/>
+    </symbol>
+
+    <symbol id="check" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+      <g clip-path="url(#clip0_535_7045)">
+        <path d="M14.25 1L4.95 11.2273L2.25 9.18225H0.75L4.95 16L15.75 1H14.25Z" fill="#001514"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_535_7045">
+          <rect width="16" height="16" fill="white" transform="translate(0.25 0.5)"/>
+        </clipPath>
+      </defs>
+    </symbol>
+  </svg>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

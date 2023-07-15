@@ -1,0 +1,368 @@
+:root {
+  --primary-blue: #0360D9;
+  --primary-accent: #EBF2FC;
+  --white-90: #FCFEFE;
+  --light-grey: #F2F2F7;
+  --dark-grey: #060C3C;
+  --black-90: #001514;
+  --gradient-400: linear-gradient(207deg, #5699F0 0%, #0360D9 57.29%);
+  --border-shade-400: #F5F9FD;
+}
+
+html, body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--white-90);
+  color: var(--black-90);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+.width-max-content {
+  width: max-content;
+}
+
+.flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+h2 {
+  display: block;
+  color: var(--black-90);
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.375rem;
+  }
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+p {
+  color: var(--black-90);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+@media (min-width: 992px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.btn {
+  color: var(--white-90);
+  font-size: 0.875rem;
+  text-align: center;
+  background: var(--gradient-400);
+  transition: all 300ms ease-in-out;
+}
+.btn-small {
+  border-radius: 8px;
+  padding: 1.125em 0.875em;
+}
+.btn-large {
+  border-radius: 12px;
+  padding: 1.125em 2.125em;
+}
+@media (min-width: 768px) {
+  .btn-large {
+    font-size: 1rem;
+  }
+}
+
+.brand-logo {
+  width: 75%;
+}
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 100%;
+  }
+}
+.brand-name {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .brand-name {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .brand-name {
+    font-size: 2rem;
+  }
+}
+
+.navbar {
+  background-color: var(--white-90);
+}
+@media (min-width: 992px) {
+  .navbar {
+    background-color: var(--primary-accent);
+  }
+}
+
+#nav-container {
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  #nav-container {
+    font-size: 1.25rem;
+  }
+}
+
+.nav-item {
+  transition: 300ms ease-in-out;
+}
+.nav-item.active {
+  text-decoration: underline var(--primary-blue) solid 0.125rem;
+  text-underline-offset: 0.5rem;
+}
+@media (min-width: 992px) {
+  .nav-item:hover {
+    scale: 1.0625;
+  }
+}
+
+#hero {
+  height: auto;
+}
+#hero h1 {
+  color: var(--dark-grey);
+  font-size: 2rem;
+  line-height: 1.5;
+}
+@media (min-width: 992px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  #hero h1 {
+    font-size: 4rem;
+  }
+}
+#hero .hero-main {
+  background-image: none;
+}
+@media (min-width: 992px) {
+  #hero .hero-main {
+    background: var(--primary-accent) url("../assets/imgs/hero-bg.png") right bottom/55% no-repeat;
+  }
+}
+@media (min-width: 1330px) {
+  #hero .hero-main {
+    background-size: 50%;
+  }
+}
+@media (min-width: 1300px) {
+  #hero .hero-main {
+    background-size: 45%;
+  }
+}
+@media (min-width: 992px) {
+  #hero .hero-text {
+    color: var(--black-90);
+  }
+}
+@media (min-width: 992px) {
+  #hero .hero-text span {
+    background-image: var(--gradient-400);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+#hero .hero-stroke {
+  bottom: -10px;
+}
+@media (min-width: 1400px) {
+  #hero .hero-stroke {
+    bottom: 0px;
+  }
+}
+#hero .hero-right-col {
+  min-height: 20rem;
+  background: url("../assets/imgs/hero-bg.png") no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 100%;
+}
+@media (min-width: 390px) {
+  #hero .hero-right-col {
+    min-height: 27.5rem;
+  }
+}
+@media (min-width: 560px) {
+  #hero .hero-right-col {
+    min-height: 30rem;
+  }
+}
+@media (min-width: 576px) {
+  #hero .hero-right-col {
+    background-size: 90%;
+  }
+}
+@media (min-width: 768px) {
+  #hero .hero-right-col {
+    min-height: 30rem;
+    background-size: 75%;
+  }
+}
+@media (min-width: 992px) {
+  #hero .hero-right-col {
+    min-height: auto;
+    background: none;
+  }
+}
+#hero .stats div:nth-child(1) {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+@media (min-width: 992px) {
+  #hero .stats div:nth-child(1) {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  #hero .stats div:nth-child(1) {
+    font-size: 4rem;
+  }
+}
+
+#hero .hero-stats {
+  color: var(--white-90);
+  background-color: var(--primary-blue);
+}
+#hero .stats div:nth-child(2) {
+  font-size: 0.625rem;
+  line-height: 1.3125;
+}
+@media (min-width: 992px) {
+  #hero .stats div:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+.service {
+  color: var(--black-90);
+}
+@media (min-width: 1200px) {
+  .service-card-holder {
+    max-width: 240px;
+  }
+}
+.service-card {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-shade-400);
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .service-card {
+    background-color: var(--white-90);
+    border-radius: 12px;
+    border: none;
+    transition: 300ms ease-in-out;
+  }
+  .service-card:is(:hover, :focus) {
+    box-shadow: 0px 12px 24px -4px rgba(16, 24, 40, 0.05);
+  }
+}
+.service-card h4 {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+@media (min-width: 768px) {
+  .service-card h4 {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 992px) {
+  .service-card h4 {
+    font-size: 1.25rem;
+  }
+}
+.service-card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+@media (min-width: 992px) {
+  .service-card p {
+    font-size: 1rem;
+  }
+}
+.service .heart {
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: 992px) {
+  .service .heart {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .why-us-header {
+    text-align: start;
+  }
+}
+.why-us reason {
+  font-size: 1.125rem;
+}
+@media (min-width: 992px) {
+  .why-us reason {
+    font-size: 1.25rem;
+  }
+}
+
+.doctor-card {
+  box-shadow: 0px 12px 24px -4px rgba(16, 24, 40, 0.05);
+  transition: all 500ms ease-in-out;
+}
+.doctor-image-holder::before {
+  content: "General Surgeon";
+  position: absolute;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: var(--white-90);
+  bottom: 0;
+}
+.doctor-image-holder:is(.cardio)::before {
+  content: "Cardiologist";
+}
+.doctor-name {
+  font-size: 1.125rem;
+}
+@media (min-width: 992px) {
+  .doctor-name {
+    font-size: 1.25rem;
+  }
+}
+.doctor .btn {
+  padding: 1.125rem 1rem;
+}
+
+/* START */
