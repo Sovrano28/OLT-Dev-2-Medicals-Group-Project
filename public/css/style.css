@@ -366,7 +366,7 @@ p {
   padding: 1.125rem 1rem;
 }
 
-/* START */
+/** ////////// */
 
 /* TESTIMONIALS */
 .testimonials-title {
@@ -458,23 +458,22 @@ p {
 }
 /* TESTIMONIAL END */
 
+
+/* PUBLICATIONS */
 .cards {
   border-radius: 0.5rem;
   padding: 1rem;
   background-color: #fff;
 }
 
-/* PUBLICATIONS */
 .publicationTitle {
-  font-family: IBM Plex Sans;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.25rem; /* 125% */
   letter-spacing: -0.01rem;
 }
 
-/* publiction card ratings */
+/* publication card ratings */
 /* @media only screen and (max-width: 600px) {}
  */
 @media only screen and (max-width: 575px) {
@@ -495,22 +494,19 @@ p {
   /* flex-shrink: 0; */
   /* width: 1.5625rem; */
   color: #FFF;
-  font-family: IBM Plex Sans;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .publicationPrice {
-  color: var(--black, #001514);
-  font-family: IBM Plex Sans;
+  color: var(--black-90);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.8rem; /* 160% */
 }
 /* PUBLICATIONS END */
+
 
 /* FOOTER */
 .hospital {
@@ -529,7 +525,6 @@ h6.summary {
 
 .borderline {
   border-top: 1px solid #6DA3E9;
-  color: #6DA3E9;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
