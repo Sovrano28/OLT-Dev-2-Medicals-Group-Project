@@ -3,6 +3,7 @@
   --primary-accent: #EBF2FC;
   --white-90: #FCFEFE;
   --light-grey: #F2F2F7;
+  --dark-grey-80: #6D7177;
   --dark-grey: #060C3C;
   --black-90: #001514;
   --gradient-400: linear-gradient(207deg, #5699F0 0%, #0360D9 57.29%);
@@ -328,11 +329,11 @@ p {
     text-align: start;
   }
 }
-.why-us reason {
+.why-us .reason {
   font-size: 1.125rem;
 }
 @media (min-width: 992px) {
-  .why-us reason {
+  .why-us .reason {
     font-size: 1.25rem;
   }
 }
@@ -365,10 +366,100 @@ p {
   padding: 1.125rem 1rem;
 }
 
-
 /* START */
-/*footer*/
 
+/* TESTIMONIALS */
+.testimonials-title {
+  text-align: center;
+}
+
+.testimonials p::before {
+  position: absolute;
+  content: "\“";
+  vertical-align: middle;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  top: -1.5rem;
+}
+
+.testimonials-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonials-name {
+  font-size: 1.125rem;
+}
+
+.testimonials-occupation {
+  columns: var(--dark-grey-80);
+  font-size: 0.875rem;
+}
+
+.testimonials-slide-nav {
+  margin-top: 1.5rem;
+  z-index: 9;
+}
+
+.slide-nav-buttons {
+  padding: 1px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-image: var(--gradient-400);
+}
+.slide-nav-buttons .flex-centre {
+  background-color: var(--white-90);
+  border-radius: 0.25rem;
+}
+
+.bg-gradient-400 {
+  background-image: var(--gradient-400);
+}
+
+.bg-gradient-400 path {
+  fill: var(--white-90);
+}
+
+@media (min-width: 992px) {
+  .testimonials-name {
+    font-size: 1.25rem;
+  }
+  
+  .testimonials-title {
+    text-align: start;
+  }
+  
+  .testimonials-occupation {
+    font-size: 1rem;
+  }
+
+  .testimonials-slide-nav {
+    margin-top: 0;
+    position: absolute;
+    left: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials-image {
+    max-width: 85%;
+  }
+  
+  .testimonials-slide-nav {
+    bottom: 6.25%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .testimonials-slide-nav {
+    bottom: 25%;
+  }
+}
+/* TESTIMONIAL END */
+
+
+/* FOOTER */
 .hospital{
   background-color:var(--color-pallet-primary-blue-main, #0360D9);
   
@@ -420,3 +511,4 @@ h6.office{
 h6.email{
   font-weight: 400;
 }
+/* FOOTER END */
