@@ -460,55 +460,51 @@ p {
 
 
 /* FOOTER */
-.hospital{
-  background-color:var(--color-pallet-primary-blue-main, #0360D9);
-  
+.hospital {
+  background-color: var(--primary-blue);
+  color: var(--white-90);
 }
-.name{
-    font-size: 1.5rem;
-    padding-top: 3rem;
 
+.name {
+  font-size: 1.5rem;
+  padding-top: 3rem;
 }
-h6.summary{
-  
+
+h6.summary {
   line-height: 2;
 }
-.borderline{
-  border-top: 0.01rem solid white;
-  padding-top: 3rem ;
+
+.borderline {
+  border-top: 1px solid #6DA3E9;
+  color: #6DA3E9;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
 }
-h1.Appoint{
-  font-weight: 700;
-  
-}
-h6.note{
-  line-height: 1.6;
-  font-weight: 400;
-  padding-top: 1rem;
 
+h1.appoint {
+  font-weight: 700;
 }
-h5.address{
+
+h6.note {
+  line-height: 1.6;
+  padding-top: 1rem;
+}
+
+h5.address {
   font-weight: 600;
   font-size: 1.2rem;
   padding-top: 3rem;
 }
-h6.maddress{
-  font-weight: 400;
+
+h6.mail-address {
   line-height: 1.7;
   padding-top: 3rem;
 }
-h5.office{
-font-size: 1.2rem;
-line-height: 1.8;
-padding-top: 5rem;
-}
 
-h6.office{
-  font-weight: 400;
-}
-h6.email{
-  font-weight: 400;
+h5.office {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-top: 5rem;
 }
 /* FOOTER END */
