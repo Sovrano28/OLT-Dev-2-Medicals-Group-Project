@@ -510,6 +510,18 @@ p {
 }
 /* PUBLICATIONS END */
 
+/* APPOINTMENT FORM */
+#form {
+  background-color: var(--primary-blue);
+  border-radius: 24px;
+}
+
+#form .wrapper {
+  background-color: var(--white-90);
+  border-radius: 24px;
+}
+
+/* APPOINTMENT FORM END */
 
 /* FOOTER */
 .hospital {
