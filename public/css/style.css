@@ -78,6 +78,9 @@ p {
   background: var(--gradient-400);
   transition: all 300ms ease-in-out;
 }
+.btn:hover {
+  color: var(--white-90);
+}
 .btn-small {
   border-radius: 8px;
   padding: 1.125em 0.875em;
