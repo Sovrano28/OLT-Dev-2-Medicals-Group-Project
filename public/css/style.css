@@ -1,5 +1,6 @@
 :root {
   --primary-blue: #0360D9;
+  --primary-blue-600: #024398;
   --primary-accent: #EBF2FC;
   --white-90: #FCFEFE;
   --light-grey: #F2F2F7;
@@ -71,15 +72,16 @@ p {
   }
 }
 
-.btn {
+:is(.btn) {
   color: var(--white-90);
   font-size: 0.875rem;
   text-align: center;
   background: var(--gradient-400);
   transition: all 300ms ease-in-out;
 }
-.btn:hover {
+:is(.btn, .btn.btn-small, .btn.btn-large):is(:hover, :active, :focus-visible) {
   color: var(--white-90);
+  background: var(--gradient-400);
 }
 .btn-small {
   border-radius: 8px;
